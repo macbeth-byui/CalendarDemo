@@ -30,6 +30,7 @@ public class MainActivity extends AppCompatActivity {
                 // Take the calendar information from the eventDay parameter and use
                 // it to create a new EventDay with an associated picture
                 EventDay newEvent = new EventDay(eventDay.getCalendar(), R.drawable.sample_three_icons);
+                long value = eventDay.getCalendar().getTimeInMillis();
 
                 // Add the event to our list
                 events.add(newEvent);
